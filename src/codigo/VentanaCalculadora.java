@@ -345,7 +345,16 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_botondivisionActionPerformed
 
     private void botonigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonigualActionPerformed
-   
+        //el botonigual tiene que saber que operacion se pulso
+        //como ese valor lo guarde en la variable operacion
+        //monto un if para que dependendo de ese valor 
+        //realice la operacion correspondiente
+        double operando2 = Double.valueOf(display.getText());
+        if(operacion.equals("+")){
+            operando1 = operando1 + operando2;
+        }
+        //por ultimo, muestro el resultado en la pantalla
+        display.setText( String.valueOf(operando1));
     }//GEN-LAST:event_botonigualActionPerformed
 
     /**
