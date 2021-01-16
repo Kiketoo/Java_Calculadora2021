@@ -54,21 +54,24 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     private void initComponents() {
 
         display = new javax.swing.JLabel();
-        boton7 = new javax.swing.JButton();
-        boton8 = new javax.swing.JButton();
-        boton9 = new javax.swing.JButton();
-        boton4 = new javax.swing.JButton();
-        boton5 = new javax.swing.JButton();
-        boton6 = new javax.swing.JButton();
-        boton3 = new javax.swing.JButton();
-        boton1 = new javax.swing.JButton();
-        boton2 = new javax.swing.JButton();
-        boton0 = new javax.swing.JButton();
-        botonsuma = new javax.swing.JButton();
-        botonmultiplicacion = new javax.swing.JButton();
-        botonigual = new javax.swing.JButton();
-        botonresta = new javax.swing.JButton();
-        botondivision = new javax.swing.JButton();
+        Clear = new javax.swing.JButton();
+        Boton7 = new javax.swing.JButton();
+        Boton9 = new javax.swing.JButton();
+        Boton8 = new javax.swing.JButton();
+        Boton6 = new javax.swing.JButton();
+        Boton5 = new javax.swing.JButton();
+        Multiplicación = new javax.swing.JButton();
+        Boton4 = new javax.swing.JButton();
+        Boton3 = new javax.swing.JButton();
+        Boton2 = new javax.swing.JButton();
+        División = new javax.swing.JButton();
+        Boton1 = new javax.swing.JButton();
+        Resta = new javax.swing.JButton();
+        Boton0 = new javax.swing.JButton();
+        Igual = new javax.swing.JButton();
+        Suma = new javax.swing.JButton();
+        Porcentaje = new javax.swing.JButton();
+        Cuadrado = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -80,138 +83,165 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         display.setText("0");
         display.setOpaque(true);
 
-        boton7.setBackground(new java.awt.Color(102, 255, 102));
-        boton7.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton7.setText("7");
-        boton7.addActionListener(new java.awt.event.ActionListener() {
+        Clear.setBackground(new java.awt.Color(102, 255, 102));
+        Clear.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Clear.setText("C");
+        Clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton7ActionPerformed(evt);
+                ClearActionPerformed(evt);
             }
         });
 
-        boton8.setBackground(new java.awt.Color(102, 255, 102));
-        boton8.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton8.setText("8");
-        boton8.addActionListener(new java.awt.event.ActionListener() {
+        Boton7.setBackground(new java.awt.Color(102, 255, 102));
+        Boton7.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton7.setText("7");
+        Boton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton8ActionPerformed(evt);
+                Boton7ActionPerformed(evt);
             }
         });
 
-        boton9.setBackground(new java.awt.Color(102, 255, 102));
-        boton9.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton9.setText("9");
-        boton9.addActionListener(new java.awt.event.ActionListener() {
+        Boton9.setBackground(new java.awt.Color(102, 255, 102));
+        Boton9.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton9.setText("9");
+        Boton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton9ActionPerformed(evt);
+                Boton9ActionPerformed(evt);
             }
         });
 
-        boton4.setBackground(new java.awt.Color(102, 255, 102));
-        boton4.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton4.setText("4");
-        boton4.addActionListener(new java.awt.event.ActionListener() {
+        Boton8.setBackground(new java.awt.Color(102, 255, 102));
+        Boton8.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton8.setText("8");
+        Boton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton4ActionPerformed(evt);
+                Boton8ActionPerformed(evt);
             }
         });
 
-        boton5.setBackground(new java.awt.Color(102, 255, 102));
-        boton5.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton5.setText("5");
-        boton5.addActionListener(new java.awt.event.ActionListener() {
+        Boton6.setBackground(new java.awt.Color(102, 255, 102));
+        Boton6.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton6.setText("6");
+        Boton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton5ActionPerformed(evt);
+                Boton6ActionPerformed(evt);
             }
         });
 
-        boton6.setBackground(new java.awt.Color(102, 255, 102));
-        boton6.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton6.setText("6");
-        boton6.addActionListener(new java.awt.event.ActionListener() {
+        Boton5.setBackground(new java.awt.Color(102, 255, 102));
+        Boton5.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton5.setText("5");
+        Boton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton6ActionPerformed(evt);
+                Boton5ActionPerformed(evt);
             }
         });
 
-        boton3.setBackground(new java.awt.Color(102, 255, 102));
-        boton3.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton3.setText("3");
-        boton3.addActionListener(new java.awt.event.ActionListener() {
+        Multiplicación.setBackground(new java.awt.Color(102, 255, 102));
+        Multiplicación.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Multiplicación.setText("*");
+        Multiplicación.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton3ActionPerformed(evt);
+                MultiplicaciónActionPerformed(evt);
             }
         });
 
-        boton1.setBackground(new java.awt.Color(102, 255, 102));
-        boton1.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton1.setText("1");
-        boton1.addActionListener(new java.awt.event.ActionListener() {
+        Boton4.setBackground(new java.awt.Color(102, 255, 102));
+        Boton4.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton4.setText("4");
+        Boton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton1ActionPerformed(evt);
+                Boton4ActionPerformed(evt);
             }
         });
 
-        boton2.setBackground(new java.awt.Color(102, 255, 102));
-        boton2.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton2.setText("2");
-        boton2.addActionListener(new java.awt.event.ActionListener() {
+        Boton3.setBackground(new java.awt.Color(102, 255, 102));
+        Boton3.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton3.setText("3");
+        Boton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton2ActionPerformed(evt);
+                Boton3ActionPerformed(evt);
             }
         });
 
-        boton0.setBackground(new java.awt.Color(102, 255, 102));
-        boton0.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        boton0.setText("0");
-        boton0.addActionListener(new java.awt.event.ActionListener() {
+        Boton2.setBackground(new java.awt.Color(102, 255, 102));
+        Boton2.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton2.setText("2");
+        Boton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton0ActionPerformed(evt);
+                Boton2ActionPerformed(evt);
             }
         });
 
-        botonsuma.setBackground(new java.awt.Color(102, 255, 102));
-        botonsuma.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        botonsuma.setText("+");
-        botonsuma.addActionListener(new java.awt.event.ActionListener() {
+        División.setBackground(new java.awt.Color(102, 255, 102));
+        División.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        División.setText("/");
+        División.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonsumaActionPerformed(evt);
+                DivisiónActionPerformed(evt);
             }
         });
 
-        botonmultiplicacion.setBackground(new java.awt.Color(102, 255, 102));
-        botonmultiplicacion.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        botonmultiplicacion.setText("*");
-        botonmultiplicacion.addActionListener(new java.awt.event.ActionListener() {
+        Boton1.setBackground(new java.awt.Color(102, 255, 102));
+        Boton1.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton1.setText("1");
+        Boton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonmultiplicacionActionPerformed(evt);
+                Boton1ActionPerformed(evt);
             }
         });
 
-        botonigual.setBackground(new java.awt.Color(102, 255, 102));
-        botonigual.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        botonigual.setText("=");
-        botonigual.addActionListener(new java.awt.event.ActionListener() {
+        Resta.setBackground(new java.awt.Color(102, 255, 102));
+        Resta.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Resta.setText("-");
+        Resta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonigualActionPerformed(evt);
+                RestaActionPerformed(evt);
             }
         });
 
-        botonresta.setBackground(new java.awt.Color(102, 255, 102));
-        botonresta.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        botonresta.setText("-");
-        botonresta.addActionListener(new java.awt.event.ActionListener() {
+        Boton0.setBackground(new java.awt.Color(102, 255, 102));
+        Boton0.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Boton0.setText("0");
+        Boton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonrestaActionPerformed(evt);
+                Boton0ActionPerformed(evt);
             }
         });
 
-        botondivision.setBackground(new java.awt.Color(102, 255, 102));
-        botondivision.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
-        botondivision.setText("/");
-        botondivision.addActionListener(new java.awt.event.ActionListener() {
+        Igual.setBackground(new java.awt.Color(102, 255, 102));
+        Igual.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Igual.setText("=");
+        Igual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botondivisionActionPerformed(evt);
+                IgualActionPerformed(evt);
+            }
+        });
+
+        Suma.setBackground(new java.awt.Color(102, 255, 102));
+        Suma.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Suma.setText("+");
+        Suma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SumaActionPerformed(evt);
+            }
+        });
+
+        Porcentaje.setBackground(new java.awt.Color(102, 255, 102));
+        Porcentaje.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Porcentaje.setText("%");
+        Porcentaje.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PorcentajeActionPerformed(evt);
+            }
+        });
+
+        Cuadrado.setBackground(new java.awt.Color(102, 255, 102));
+        Cuadrado.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
+        Cuadrado.setText("^2");
+        Cuadrado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CuadradoActionPerformed(evt);
             }
         });
 
@@ -220,41 +250,48 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(display, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(display, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Porcentaje, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Multiplicación, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(División, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Igual, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(Suma, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Boton0, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Resta, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(boton6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(botonsuma, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(botonresta, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(boton3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(botonmultiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(botondivision, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(boton9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(boton0, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(botonigual, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(26, Short.MAX_VALUE))
+                                .addComponent(Cuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Clear, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(437, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,99 +300,141 @@ public class VentanaCalculadora extends javax.swing.JFrame {
                 .addComponent(display, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton0, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(botonigual, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
+                    .addComponent(Boton7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Porcentaje, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(botonsuma, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(botonresta, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
+                    .addComponent(Multiplicación, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(boton1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(boton3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(botonmultiplicacion, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-                    .addComponent(botondivision, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
-                .addGap(45, 45, 45))
+                    .addComponent(División, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Suma, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Resta, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Boton0, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Cuadrado, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Igual, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(Clear, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
+                .addGap(6, 6, 6))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void boton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton8ActionPerformed
-         escribeNumeroEnPantalla("8");
-    }//GEN-LAST:event_boton8ActionPerformed
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
+        display.setText("0");
+    }//GEN-LAST:event_ClearActionPerformed
 
-    private void boton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton5ActionPerformed
-         escribeNumeroEnPantalla("5");
-    }//GEN-LAST:event_boton5ActionPerformed
+    private void Boton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton7ActionPerformed
+        escribeNumeroEnPantalla("7");
+    }//GEN-LAST:event_Boton7ActionPerformed
 
-    private void boton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton6ActionPerformed
-         escribeNumeroEnPantalla("6");
-    }//GEN-LAST:event_boton6ActionPerformed
+    private void Boton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton9ActionPerformed
+        escribeNumeroEnPantalla("9");
+    }//GEN-LAST:event_Boton9ActionPerformed
 
-    private void boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1ActionPerformed
+    private void Boton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton8ActionPerformed
+        escribeNumeroEnPantalla("8");
+    }//GEN-LAST:event_Boton8ActionPerformed
+
+    private void Boton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton6ActionPerformed
+        escribeNumeroEnPantalla("6");
+    }//GEN-LAST:event_Boton6ActionPerformed
+
+    private void Boton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton5ActionPerformed
+        escribeNumeroEnPantalla("5");
+    }//GEN-LAST:event_Boton5ActionPerformed
+
+    private void MultiplicaciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiplicaciónActionPerformed
+        operacionPulsada("*");
+    }//GEN-LAST:event_MultiplicaciónActionPerformed
+
+    private void Boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton4ActionPerformed
+        escribeNumeroEnPantalla("4");
+    }//GEN-LAST:event_Boton4ActionPerformed
+
+    private void Boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton3ActionPerformed
+        escribeNumeroEnPantalla("3");
+    }//GEN-LAST:event_Boton3ActionPerformed
+
+    private void Boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton2ActionPerformed
+        escribeNumeroEnPantalla("2");
+    }//GEN-LAST:event_Boton2ActionPerformed
+
+    private void DivisiónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DivisiónActionPerformed
+        operacionPulsada("/");
+    }//GEN-LAST:event_DivisiónActionPerformed
+
+    private void Boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton1ActionPerformed
         escribeNumeroEnPantalla("1");
-    }//GEN-LAST:event_boton1ActionPerformed
+    }//GEN-LAST:event_Boton1ActionPerformed
 
-    private void boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton2ActionPerformed
-         escribeNumeroEnPantalla("2");
-    }//GEN-LAST:event_boton2ActionPerformed
+    private void RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RestaActionPerformed
+        operacionPulsada("-");
+    }//GEN-LAST:event_RestaActionPerformed
 
-    private void botonrestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonrestaActionPerformed
-         escribeNumeroEnPantalla("-");
-    }//GEN-LAST:event_botonrestaActionPerformed
+    private void Boton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton0ActionPerformed
+        escribeNumeroEnPantalla("0");
+    }//GEN-LAST:event_Boton0ActionPerformed
 
-    private void boton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton0ActionPerformed
-         escribeNumeroEnPantalla("0");
-    }//GEN-LAST:event_boton0ActionPerformed
-
-    private void boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton3ActionPerformed
-         escribeNumeroEnPantalla("3");
-    }//GEN-LAST:event_boton3ActionPerformed
-
-    private void boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton4ActionPerformed
-         escribeNumeroEnPantalla("4");
-    }//GEN-LAST:event_boton4ActionPerformed
-
-    private void boton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton7ActionPerformed
-         escribeNumeroEnPantalla("7");
-    }//GEN-LAST:event_boton7ActionPerformed
-
-    private void boton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton9ActionPerformed
-         escribeNumeroEnPantalla("9");
-    }//GEN-LAST:event_boton9ActionPerformed
-
-    private void botonsumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonsumaActionPerformed
-        operacionPulsada("+");
-    }//GEN-LAST:event_botonsumaActionPerformed
-
-    private void botonmultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonmultiplicacionActionPerformed
-         escribeNumeroEnPantalla("*");
-    }//GEN-LAST:event_botonmultiplicacionActionPerformed
-
-    private void botondivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botondivisionActionPerformed
-         escribeNumeroEnPantalla("/");
-    }//GEN-LAST:event_botondivisionActionPerformed
-
-    private void botonigualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonigualActionPerformed
-        //el botonigual tiene que saber que operacion se pulso
-        //como ese valor lo guarde en la variable operacion
-        //monto un if para que dependendo de ese valor 
-        //realice la operacion correspondiente
+    private void IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IgualActionPerformed
         double operando2 = Double.valueOf(display.getText());
+        //Suma
         if(operacion.equals("+")){
-            operando1 = operando1 + operando2;
+        operando1= operando1 + operando2;
+        display.setText(String.valueOf(operando1));         
         }
-        //por ultimo, muestro el resultado en la pantalla
-        display.setText( String.valueOf(operando1));
-    }//GEN-LAST:event_botonigualActionPerformed
+        //Resta
+        if(operacion.equals("-")){
+        operando1= operando1 - operando2;
+        display.setText(String.valueOf(operando1));         
+        }
+        //Multiplicación
+        if(operacion.equals("*")){
+        operando1= operando1 * operando2;
+        display.setText(String.valueOf(operando1));         
+        }
+        //División
+        if(operacion.equals("/") && operando2 != 0){
+        operando1= operando1 / operando2;
+        display.setText(String.valueOf(operando1));
+        }
+        else if(operacion.equals("/") && operando2 == 0){
+        display.setText("MathError");
+    }//GEN-LAST:event_IgualActionPerformed
+        //Porcentaje
+        if(operacion.equals("%")){
+        operando1= operando1 * (operando2/100);
+        display.setText(String.valueOf(operando1));         
+        }
+        //Elevar al cuadrado
+        if(operacion.equals("^2")){
+        operando1= operando1 * operando1;
+        display.setText(String.valueOf(operando1));         
+        }
+    }
+    private void SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SumaActionPerformed
+        operacionPulsada("+");
+    }//GEN-LAST:event_SumaActionPerformed
+
+    private void PorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PorcentajeActionPerformed
+        operacionPulsada("%");
+    }//GEN-LAST:event_PorcentajeActionPerformed
+
+    private void CuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuadradoActionPerformed
+        operacionPulsada("^2");
+    }//GEN-LAST:event_CuadradoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -393,21 +472,24 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton boton0;
-    private javax.swing.JButton boton1;
-    private javax.swing.JButton boton2;
-    private javax.swing.JButton boton3;
-    private javax.swing.JButton boton4;
-    private javax.swing.JButton boton5;
-    private javax.swing.JButton boton6;
-    private javax.swing.JButton boton7;
-    private javax.swing.JButton boton8;
-    private javax.swing.JButton boton9;
-    private javax.swing.JButton botondivision;
-    private javax.swing.JButton botonigual;
-    private javax.swing.JButton botonmultiplicacion;
-    private javax.swing.JButton botonresta;
-    private javax.swing.JButton botonsuma;
+    private javax.swing.JButton Boton0;
+    private javax.swing.JButton Boton1;
+    private javax.swing.JButton Boton2;
+    private javax.swing.JButton Boton3;
+    private javax.swing.JButton Boton4;
+    private javax.swing.JButton Boton5;
+    private javax.swing.JButton Boton6;
+    private javax.swing.JButton Boton7;
+    private javax.swing.JButton Boton8;
+    private javax.swing.JButton Boton9;
+    private javax.swing.JButton Clear;
+    private javax.swing.JButton Cuadrado;
+    private javax.swing.JButton División;
+    private javax.swing.JButton Igual;
+    private javax.swing.JButton Multiplicación;
+    private javax.swing.JButton Porcentaje;
+    private javax.swing.JButton Resta;
+    private javax.swing.JButton Suma;
     private javax.swing.JLabel display;
     // End of variables declaration//GEN-END:variables
 }
